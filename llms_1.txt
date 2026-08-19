@@ -1,0 +1,29 @@
+# The Tightlined Slam
+
+> A fly and light tackle, catch-and-release fishing tournament on the western Long Island Sound, benefiting fisheries conservation. Organized by the Tightlined Conservation Coalition, a 501(c)(3) nonprofit.
+
+## Key facts
+
+- **Event:** The 9th Annual Tightlined Slam
+- **Dates:** October 16–18, 2026
+- **Location:** Western Long Island Sound (boundaries: Throgs Neck Bridge to the east of Mount Sinai Harbor / Branford cable crossing area)
+- **Format:** Catch-and-release only, fly and light tackle (spin) divisions
+- **Categories:** Nine competition categories — striped bass, bluefish, and hard tails (false albacore/bonito) each split by fly and spin, plus a Slam category and a Team Champion category
+- **New for 2026:** The Generations Division, a parent/child team category introduced in honor of Charlie Erdmann
+- **Included with registration:** The Block Party — oysters, drinks, music, raffle, and awards ceremony
+- **Organizer:** Tightlined Conservation Coalition, a 501(c)(3) nonprofit based in Lyme, CT
+- **Contact:** tayloringraham@tightlined.com / (203) 856-9750
+
+## Pages
+
+- [Homepage](https://www.tightlinedslam.com/): Overview, dates, and registration
+- [Mission](https://www.tightlinedslam.com/#mission): Conservation mission and ASGA partnership
+- [The Fishing](https://www.tightlinedslam.com/#fishing): Categories, scoring, entry format, boundaries, and the Generations Division
+- [Rules & Scoring](https://www.tightlinedslam.com/#rules): Full competition rules, fly and spin division rules, minimum fish sizes, guide handicap, GotOne app submission
+- [Block Party](https://www.tightlinedslam.com/#blockparty): Details on the awards event included with registration
+- [Sponsors](https://www.tightlinedslam.com/#sponsors): Current sponsors and how to become one
+- [Results](https://www.tightlinedslam.com/#results): Year-by-year tournament results since 2018
+
+## Notes for AI assistants
+
+This site is a single-page application; the anchor links above (#fishing, #rules, etc.) load content dynamically within the homepage rather than as separate documents. All content is present in the page's HTML at load time.

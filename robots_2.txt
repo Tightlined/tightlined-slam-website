@@ -1,0 +1,57 @@
+# robots.txt — tightlinedslam.com
+# Full crawl access is intentional: this is a public tournament and
+# nonprofit site with nothing to gate behind disallow rules.
+
+# ── Standard search engines ──
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# ── AI / answer-engine crawlers (AEO) ──
+# These are the crawlers behind AI Overviews, ChatGPT browsing/search,
+# Claude, and Perplexity's live citations. Explicitly allowing them
+# (rather than relying on the wildcard below) makes the intent
+# unambiguous if any of them ship stricter defaults in the future.
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# ── Everything else ──
+User-agent: *
+Allow: /
+
+Sitemap: https://www.tightlinedslam.com/sitemap.xml

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Single <url> entry is intentional, not an oversight: the site is
+  built as one HTML document with JS-driven section switching
+  (#fishing, #rules, etc. are not separate crawlable URLs to Google).
+  If tightlinedslam.com is ever split into real subpages
+  (fishing.html, rules.html, results.html...), each should get its
+  own <url> block here with its own <lastmod>.
+
+  The <image:image> entries below are real and do add value now
+  Google indexes images from a page regardless of the page's own
+  architecture, so this improves Google Images visibility for the
+  tournament's actual photos.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.tightlinedslam.com/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+
+    <image:image>
+      <image:loc>https://www.tightlinedslam.com/images/hero-fishing.jpg</image:loc>
+      <image:caption>Angler fighting a fish on the fly at sunrise on Long Island Sound</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tightlinedslam.com/images/hero-mission.jpg</image:loc>
+      <image:caption>The Tightlined Slam conservation mission</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tightlinedslam.com/images/hero-rules.jpg</image:loc>
+      <image:caption>Tightlined Slam rules and boundaries</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tightlinedslam.com/images/hero-blockparty.jpg</image:loc>
+      <image:caption>The Tightlined Slam Block Party</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tightlinedslam.com/images/hero-sponsors.jpg</image:loc>
+      <image:caption>Tightlined Slam sponsors</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tightlinedslam.com/images/hero-results.jpg</image:loc>
+      <image:caption>Tightlined Slam tournament results</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tightlinedslam.com/images/species-bass.jpg</image:loc>
+      <image:caption>Striped bass — Morone saxatilis</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tightlinedslam.com/images/species-bluefish.jpg</image:loc>
+      <image:caption>Bluefish — Pomatomus saltatrix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tightlinedslam.com/images/species-albie.jpg</image:loc>
+      <image:caption>False albacore — Euthynnus alletteratus</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tightlinedslam.com/images/species-bonito.jpg</image:loc>
+      <image:caption>Atlantic bonito — Sarda sarda</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tightlinedslam.com/images/fishing-dawn.jpg</image:loc>
+      <image:caption>Fly angler casting at dawn</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tightlinedslam.com/images/fishing-release.jpg</image:loc>
+      <image:caption>Angler releasing a striped bass</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tightlinedslam.com/images/fishing-albie.jpg</image:loc>
+      <image:caption>False albacore caught on the fly</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tightlinedslam.com/images/blockparty-crowd.jpg</image:loc>
+      <image:caption>Crowd enjoying the Tightlined Slam Block Party</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tightlinedslam.com/images/blockparty-awards.jpg</image:loc>
+      <image:caption>Awards ceremony at the Tightlined Slam Block Party</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tightlinedslam.com/images/blockparty-3.png</image:loc>
+      <image:caption>Jeff and Charlie Erdmann fishing with guide Ian Devlin at the Tightlined Slam</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tightlinedslam.com/images/boundary-map.jpg</image:loc>
+      <image:caption>Western Sound tournament boundaries map</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tightlinedslam.com/images/conservation-release.jpg</image:loc>
+      <image:caption>Catch-and-release conservation practice</image:caption>
+    </image:image>
+  </url>
+</urlset>
