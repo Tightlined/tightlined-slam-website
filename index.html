@@ -1002,6 +1002,7 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
     <li><a href="#fishing" data-page="fishing">The Fishing</a></li>
     <li><a href="#rules" data-page="rules">Rules</a></li>
     <li><a href="#blockparty" data-page="blockparty">Block Party</a></li>
+    <li><a href="#raffle" data-page="raffle">Raffle &amp; Auction</a></li>
     <li><a href="#sponsors" data-page="sponsors">Sponsors</a></li>
     <li><a href="#results" data-page="results">Results</a></li>
     <li><a href="https://www.zeffy.com/en-US/ticketing/9th-annual-tightlined-slam" target="_blank" class="nav-reg">Register</a></li>
@@ -1016,6 +1017,7 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
   <a href="#fishing" data-page="fishing">The Fishing</a>
   <a href="#rules" data-page="rules">Rules</a>
   <a href="#blockparty" data-page="blockparty">Block Party</a>
+  <a href="#raffle" data-page="raffle">Raffle &amp; Auction</a>
   <a href="#sponsors" data-page="sponsors">Sponsors</a>
   <a href="#results" data-page="results">Results</a>
   <a href="https://www.zeffy.com/en-US/ticketing/9th-annual-tightlined-slam" target="_blank" class="mob-reg">Register →</a>
@@ -1778,10 +1780,10 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
         <h3>🏆 Awards &amp; Prizes</h3>
         <p>All nine categories recognized. Top fly and spin anglers, slam winners, and team champion crowned with prizes from our sponsors.</p>
       </div>
-      <div class="card-dark card">
+      <a href="#raffle" data-page="raffle" class="card-dark card" style="text-decoration:none;">
         <h3>🎫 Raffle &amp; Auction</h3>
-        <p>Rods, reels, gear, guided trips, apparel, and experiences. All proceeds support fisheries conservation.</p>
-      </div>
+        <p>Rods, reels, gear, guided trips, apparel, and experiences. All proceeds support fisheries conservation. <span style="color:var(--lime);">Browse items &rarr;</span></p>
+      </a>
     </div>
 
     <!-- Awards photo pair -->
@@ -1842,6 +1844,128 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
       <a href="https://www.zeffy.com/en-US/ticketing/9th-annual-tightlined-slam" target="_blank" class="btn-lime">Register Now</a>
       <a href="mailto:tayloringraham@tightlined.com" class="btn-outline">Questions?</a>
     </div>
+  </div>
+</section>
+</div>
+
+<div id="page-raffle" class="page">
+<style>
+  .raffle-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .raffle-card { background:#fff; border:1px solid var(--cloud); border-radius:2px; overflow:hidden; display:flex; flex-direction:column; }
+  .raffle-card .rc-img-wrap { width:100%; height:200px; background:var(--paper); display:flex; align-items:center; justify-content:center; overflow:hidden; }
+  .raffle-card img { max-width:100%; max-height:100%; width:auto; height:auto; object-fit:contain; display:block; }
+  .raffle-card .rc-body { padding:16px; display:flex; flex-direction:column; gap:6px; flex:1; }
+  .raffle-tag { font-family:var(--sans); font-size:0.62rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#8a9a2c; }
+  .raffle-card h3 { font-size:0.95rem; color:var(--navy); margin:0; line-height:1.35; }
+  .raffle-card a.rc-link { margin-top:auto; font-family:var(--sans); font-size:0.8rem; font-weight:600; color:var(--slate); text-decoration:underline; }
+  @media (max-width: 900px) { .raffle-grid { grid-template-columns:1fr 1fr; } }
+  @media (max-width: 600px) { .raffle-grid { grid-template-columns:1fr; } }
+</style>
+<div class="page-hero" style="position:relative;overflow:hidden;">
+  <img src="images/hero-blockparty.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.18;pointer-events:none;" onerror="this.style.display='none'" />
+  <div class="page-hero-inner">
+    <div class="kicker"><div class="dash"></div>Now Open &middot; Closes Online at 12pm Sunday, October 18</div>
+    <h1>Raffle &amp; Silent Auction</h1>
+    <p class="sub">Browse items and buy raffle tickets or place silent auction bids online, right now through 12:00pm on Sunday, October 18. Final drawings and auction bids are settled live at the Block Party that afternoon, starting after 1:00pm.</p>
+    <p class="sub">You don't need to be there to win the raffle &mdash; but you do need to be there to finalize a silent auction bid.</p>
+    <div style="margin-top:20px;">
+      <a href="https://www.zeffy.com/en-US/organizations/tightlined-conservation-coalition-inc" target="_blank" class="btn-lime">See All Items on Zeffy</a>
+    </div>
+  </div>
+</div>
+
+<section class="section bg-white">
+  <div class="wrap">
+    <div class="kicker-label">Item List</div>
+    <div class="lime-rule"></div>
+    <h2 style="color:var(--navy);margin-bottom:8px;">Up for Grabs</h2>
+    <p style="color:var(--slate);margin-bottom:32px;max-width:640px;">The list keeps growing as more sponsors come on board &mdash; check back often. Every ticket and bid goes directly to funding this tournament's conservation mission.</p>
+
+    <!-- ── RAFFLE ITEMS ── -->
+    <div class="sp-tier">
+      <div class="tier-hd">
+        <span class="tier-lbl" style="color:var(--navy);">Raffle Items</span>
+        <div class="tier-rule"></div>
+      </div>
+      <div class="raffle-grid">
+        <a href="https://www.zeffy.com/en-US/ticketing/reliable-fishing-products-fish-bag" target="_blank" class="raffle-card">
+          <div class="rc-img-wrap"><img src="https://res.cloudinary.com/hxn9dbuhd/image/upload/v1789389977/organizations/a/1/4/b/a14b5769-8919-464c-bf5e-b38a50c51904/9ea941a3-97f9-46fa-ba65-81252910d24b.png" alt="Reliable Fishing Products Fish Bag" onerror="this.style.display='none'" /></div>
+          <div class="rc-body">
+            <span class="raffle-tag">Raffle</span>
+            <h3>Reliable Fishing Products Fish Bag</h3>
+            <span class="rc-link">Buy tickets &rarr;</span>
+          </div>
+        </a>
+
+        <a href="https://www.zeffy.com/en-US/ticketing/fishermans-world-dollar500-gift-certificate" target="_blank" class="raffle-card">
+          <div class="rc-img-wrap"><img src="https://res.cloudinary.com/hxn9dbuhd/image/upload/v1789178694/organizations/a/1/4/b/a14b5769-8919-464c-bf5e-b38a50c51904/d198ab04-16b0-4242-906b-49e833f24573.png" alt="Fisherman's World $500 Gift Certificate" onerror="this.style.display='none'" /></div>
+          <div class="rc-body">
+            <span class="raffle-tag">Raffle</span>
+            <h3>Fisherman's World &ndash; $500 Gift Certificate</h3>
+            <span class="rc-link">Buy tickets &rarr;</span>
+          </div>
+        </a>
+
+        <a href="https://www.zeffy.com/en-US/ticketing/full-day-with-drift-wizard-outfitters-bozeman-mt" target="_blank" class="raffle-card">
+          <div class="rc-img-wrap"><img src="https://res.cloudinary.com/hxn9dbuhd/image/upload/v1789381324/organizations/a/1/4/b/a14b5769-8919-464c-bf5e-b38a50c51904/b80ccb21-a740-4ceb-b9ee-2e3a7110a264.png" alt="Full Day with Drift Wizard Outfitters, Bozeman MT" onerror="this.style.display='none'" /></div>
+          <div class="rc-body">
+            <span class="raffle-tag">Raffle</span>
+            <h3>Full Day with Drift Wizard Outfitters &ndash; Bozeman, MT</h3>
+            <span class="rc-link">Buy tickets &rarr;</span>
+          </div>
+        </a>
+
+        <a href="https://www.zeffy.com/en-US/ticketing/olukai-one-pair-of-womens-shoes-of-your-choice" target="_blank" class="raffle-card">
+          <div class="rc-img-wrap"><img src="https://res.cloudinary.com/hxn9dbuhd/image/upload/v1789467615/organizations/a/1/4/b/a14b5769-8919-464c-bf5e-b38a50c51904/564ae397-5708-4c9f-b9fd-13b1bf7a8e43.png" alt="Olukai Women's Shoes" onerror="this.style.display='none'" /></div>
+          <div class="rc-body">
+            <span class="raffle-tag">Raffle</span>
+            <h3>Olukai &ndash; Women's Shoes of Your Choice</h3>
+            <span class="rc-link">Buy tickets &rarr;</span>
+          </div>
+        </a>
+
+        <a href="https://www.zeffy.com/en-US/ticketing/olukai-one-pair-of-mens-shoes-of-your-choice" target="_blank" class="raffle-card">
+          <div class="rc-img-wrap"><img src="https://res.cloudinary.com/hxn9dbuhd/image/upload/v1789467299/organizations/a/1/4/b/a14b5769-8919-464c-bf5e-b38a50c51904/eebe3f53-dfc3-44c7-830f-5fdf309a9fe2.png" alt="Olukai Men's Shoes" onerror="this.style.display='none'" /></div>
+          <div class="rc-body">
+            <span class="raffle-tag">Raffle</span>
+            <h3>Olukai &ndash; Men's Shoes of Your Choice</h3>
+            <span class="rc-link">Buy tickets &rarr;</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- ── SILENT AUCTION ITEMS ── -->
+    <div class="sp-tier" style="margin-top:48px;">
+      <div class="tier-hd">
+        <span class="tier-lbl" style="color:var(--slate);">Silent Auction Items</span>
+        <div class="tier-rule"></div>
+      </div>
+      <div class="raffle-grid">
+        <a href="https://www.zeffy.com/en-US/ticketing/one-annual-membership-to-1868-golf-club" target="_blank" class="raffle-card">
+          <div class="rc-img-wrap"><img src="https://res.cloudinary.com/hxn9dbuhd/image/upload/v1789382149/organizations/a/1/4/b/a14b5769-8919-464c-bf5e-b38a50c51904/e289b428-f8c3-4ece-979c-4884ab3097f8.png" alt="Annual Membership to 1868 Golf Club" onerror="this.style.display='none'" /></div>
+          <div class="rc-body">
+            <span class="raffle-tag">Auction</span>
+            <h3>Annual Membership &ndash; 1868 Golf Club</h3>
+            <span class="rc-link">Place a bid &rarr;</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:40px;">
+      <a href="https://www.zeffy.com/en-US/organizations/tightlined-conservation-coalition-inc" target="_blank" class="btn-outline-navy">See All Raffle &amp; Auction Items</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm bg-navy on-dark" style="text-align:center;">
+  <div class="wrap">
+    <div class="kicker-label" style="color:rgba(255,255,255,0.4);text-align:center;">Want to Donate an Item?</div>
+    <div class="white-rule" style="margin:0 auto 18px;"></div>
+    <h2 style="max-width:480px;margin:0 auto 16px;">Help Us Grow the List</h2>
+    <p style="max-width:440px;margin:0 auto 28px;">If you know a brand or business that wants to donate a raffle or silent auction item, we'd love to hear from you.</p>
+    <a href="mailto:tayloringraham@tightlined.com?subject=Raffle%20%26%20Auction%20Item" class="btn-lime">Get in Touch</a>
   </div>
 </section>
 </div>
@@ -2907,6 +3031,7 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
         <li><a href="#fishing" data-page="fishing">The Fishing</a></li>
         <li><a href="#rules" data-page="rules">Rules &amp; Boundaries</a></li>
         <li><a href="#blockparty" data-page="blockparty">Block Party</a></li>
+        <li><a href="#raffle" data-page="raffle">Raffle &amp; Auction</a></li>
         <li><a href="https://www.zeffy.com/en-US/ticketing/9th-annual-tightlined-slam" target="_blank">Register</a></li>
         <li><a href="#results" data-page="results">Results</a></li>
       </ul></div>
@@ -2933,7 +3058,7 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
 <!-- ═══ SPA ROUTER SCRIPT ════════════════════════════════ -->
 <script>
 (function() {
-  const PAGES = ['home','mission','fishing','rules','blockparty','sponsors','results'];
+  const PAGES = ['home','mission','fishing','rules','blockparty','raffle','sponsors','results'];
   const nav = document.getElementById('main-nav');
   const mobMenu = document.getElementById('mob-menu');
 
