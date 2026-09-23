@@ -1860,6 +1860,7 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
   .raffle-card a.rc-link { margin-top:auto; font-family:var(--sans); font-size:0.8rem; font-weight:600; color:var(--slate); text-decoration:underline; }
   @media (max-width: 900px) { .raffle-grid { grid-template-columns:1fr 1fr; } }
   @media (max-width: 600px) { .raffle-grid { grid-template-columns:1fr; } }
+  @media (max-width: 600px) { .bag-photos { grid-template-columns:1fr !important; } }
 </style>
 <div class="page-hero" style="position:relative;overflow:hidden;">
   <img src="images/hero-raffle.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.18;pointer-events:none;" onerror="this.style.display='none'" />
@@ -1881,53 +1882,8 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
     <h2 style="color:var(--navy);margin-bottom:8px;">Up for Grabs</h2>
     <p style="color:var(--slate);margin-bottom:32px;max-width:640px;">The list keeps growing as more sponsors come on board &mdash; check back often. Every ticket and bid goes directly to funding this tournament's conservation mission.</p>
 
-    <!-- ── RAFFLE ITEMS ── -->
-    <div class="sp-tier">
-      <div class="tier-hd">
-        <span class="tier-lbl" style="color:var(--navy);">Raffle Items</span>
-        <div class="tier-rule"></div>
-      </div>
-      <div class="raffle-grid">
-        <a href="https://www.zeffy.com/en-US/ticketing/reliable-fishing-products-fish-bag" target="_blank" class="raffle-card">
-          <div class="rc-img-wrap"><img src="https://res.cloudinary.com/hxn9dbuhd/image/upload/v1789389977/organizations/a/1/4/b/a14b5769-8919-464c-bf5e-b38a50c51904/9ea941a3-97f9-46fa-ba65-81252910d24b.png" alt="Reliable Fishing Products Fish Bag" onerror="this.style.display='none'" /></div>
-          <div class="rc-body">
-            <span class="raffle-tag">Raffle</span>
-            <h3>Reliable Fishing Products Fish Bag</h3>
-            <span class="rc-link">Buy tickets &rarr;</span>
-          </div>
-        </a>
-
-        <a href="https://www.zeffy.com/en-US/ticketing/full-day-with-drift-wizard-outfitters-bozeman-mt" target="_blank" class="raffle-card">
-          <div class="rc-img-wrap"><img src="https://res.cloudinary.com/hxn9dbuhd/image/upload/v1789381324/organizations/a/1/4/b/a14b5769-8919-464c-bf5e-b38a50c51904/b80ccb21-a740-4ceb-b9ee-2e3a7110a264.png" alt="Full Day with Drift Wizard Outfitters, Bozeman MT" onerror="this.style.display='none'" /></div>
-          <div class="rc-body">
-            <span class="raffle-tag">Raffle</span>
-            <h3>Full Day with Drift Wizard Outfitters &ndash; Bozeman, MT</h3>
-            <span class="rc-link">Buy tickets &rarr;</span>
-          </div>
-        </a>
-
-        <a href="https://www.zeffy.com/en-US/ticketing/olukai-one-pair-of-womens-shoes-of-your-choice" target="_blank" class="raffle-card">
-          <div class="rc-img-wrap"><img src="https://res.cloudinary.com/hxn9dbuhd/image/upload/v1789467615/organizations/a/1/4/b/a14b5769-8919-464c-bf5e-b38a50c51904/564ae397-5708-4c9f-b9fd-13b1bf7a8e43.png" alt="Olukai Women's Shoes" onerror="this.style.display='none'" /></div>
-          <div class="rc-body">
-            <span class="raffle-tag">Raffle</span>
-            <h3>Olukai &ndash; Women's Shoes of Your Choice</h3>
-            <span class="rc-link">Buy tickets &rarr;</span>
-          </div>
-        </a>
-
-        <a href="https://www.zeffy.com/en-US/ticketing/olukai-one-pair-of-mens-shoes-of-your-choice" target="_blank" class="raffle-card">
-          <div class="rc-img-wrap"><img src="https://res.cloudinary.com/hxn9dbuhd/image/upload/v1789467299/organizations/a/1/4/b/a14b5769-8919-464c-bf5e-b38a50c51904/eebe3f53-dfc3-44c7-830f-5fdf309a9fe2.png" alt="Olukai Men's Shoes" onerror="this.style.display='none'" /></div>
-          <div class="rc-body">
-            <span class="raffle-tag">Raffle</span>
-            <h3>Olukai &ndash; Men's Shoes of Your Choice</h3>
-            <span class="rc-link">Buy tickets &rarr;</span>
-          </div>
-        </a>
-      </div>
-    </div>
-
     <!-- ── SILENT AUCTION ITEMS ── -->
-    <div class="sp-tier" style="margin-top:48px;">
+    <div class="sp-tier">
       <div class="tier-hd">
         <span class="tier-lbl" style="color:var(--slate);">Silent Auction Items</span>
         <div class="tier-rule"></div>
@@ -1944,8 +1900,124 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
       </div>
     </div>
 
+    <!-- ── RAFFLE ITEMS ── -->
+    <div class="sp-tier" style="margin-top:48px;">
+      <div class="tier-hd">
+        <span class="tier-lbl" style="color:var(--navy);">Raffle Items</span>
+        <div class="tier-rule"></div>
+      </div>
+      <div class="raffle-grid">
+        <a href="https://www.zeffy.com/en-US/ticketing/half-day-saltwater-fishing-with-pat-huban-albatross-fly-fishing-co" target="_blank" class="raffle-card">
+          <div class="rc-img-wrap"><img src="https://res.cloudinary.com/hxn9dbuhd/image/upload/v1790129683/organizations/a/1/4/b/a14b5769-8919-464c-bf5e-b38a50c51904/e76a2433-cdf7-4b78-bf1e-c62f40bcf192.png" alt="Half Day Saltwater with Pat Huban - Albatross Fly Fishing Co." onerror="this.style.display='none'" /></div>
+          <div class="rc-body">
+            <span class="raffle-tag">Raffle</span>
+            <h3>Half Day Saltwater with Pat Huban &ndash; Albatross Fly Fishing Co.</h3>
+            <span class="rc-link">Buy tickets &rarr;</span>
+          </div>
+        </a>
+
+        <a href="https://www.zeffy.com/en-US/ticketing/full-day-with-drift-wizard-outfitters-bozeman-mt" target="_blank" class="raffle-card">
+          <div class="rc-img-wrap"><img src="https://res.cloudinary.com/hxn9dbuhd/image/upload/v1790131293/organizations/a/1/4/b/a14b5769-8919-464c-bf5e-b38a50c51904/841cad85-0aa3-4f74-ac4c-6ee60bdc3d04.png" alt="Full Day with Drift Wizard Angler - Bozeman, MT" onerror="this.style.display='none'" /></div>
+          <div class="rc-body">
+            <span class="raffle-tag">Raffle</span>
+            <h3>Full Day with Drift Wizard Angler &ndash; Bozeman, MT</h3>
+            <span class="rc-link">Buy tickets &rarr;</span>
+          </div>
+        </a>
+
+        <a href="https://www.zeffy.com/en-US/ticketing/tfo-legacy-fly-rod-7-weight" target="_blank" class="raffle-card">
+          <div class="rc-img-wrap"><img src="https://res.cloudinary.com/hxn9dbuhd/image/upload/v1790129936/organizations/a/1/4/b/a14b5769-8919-464c-bf5e-b38a50c51904/bfd9ebce-1a19-4ae0-8419-6b4c2432c709.png" alt="TFO Legacy Fly Rod - 7 Weight" onerror="this.style.display='none'" /></div>
+          <div class="rc-body">
+            <span class="raffle-tag">Raffle</span>
+            <h3>TFO Legacy Fly Rod &ndash; 7 Weight</h3>
+            <span class="rc-link">Buy tickets &rarr;</span>
+          </div>
+        </a>
+
+        <a href="https://www.zeffy.com/en-US/ticketing/tfo-intracoastal-spinning-rod-7-mh" target="_blank" class="raffle-card">
+          <div class="rc-img-wrap"><img src="https://res.cloudinary.com/hxn9dbuhd/image/upload/v1790131994/organizations/a/1/4/b/a14b5769-8919-464c-bf5e-b38a50c51904/444a6dde-04e5-4178-9bd2-ad4b0af78d4a.png" alt="TFO Intracoastal Spinning Rod - 7' MH" onerror="this.style.display='none'" /></div>
+          <div class="rc-body">
+            <span class="raffle-tag">Raffle</span>
+            <h3>TFO Intracoastal Spinning Rod - 7' MH</h3>
+            <span class="rc-link">Buy tickets &rarr;</span>
+          </div>
+        </a>
+
+        <a href="https://www.zeffy.com/en-US/ticketing/turtlebox-original-gen--3" target="_blank" class="raffle-card">
+          <div class="rc-img-wrap"><img src="https://res.cloudinary.com/hxn9dbuhd/image/upload/v1790129487/organizations/a/1/4/b/a14b5769-8919-464c-bf5e-b38a50c51904/662cd630-eb83-4168-b6e8-437f90535aac.png" alt="Turtlebox Original Gen 3" onerror="this.style.display='none'" /></div>
+          <div class="rc-body">
+            <span class="raffle-tag">Raffle</span>
+            <h3>Turtlebox Original Gen 3</h3>
+            <span class="rc-link">Buy tickets &rarr;</span>
+          </div>
+        </a>
+
+        <a href="https://www.zeffy.com/en-US/ticketing/free-fly-apparel-dollar250-gift-certificate" target="_blank" class="raffle-card">
+          <div class="rc-img-wrap"><img src="https://res.cloudinary.com/hxn9dbuhd/image/upload/v1790158716/organizations/a/1/4/b/a14b5769-8919-464c-bf5e-b38a50c51904/0380062c-2c4f-470b-b161-05ab29ee984c.png" alt="Free Fly Apparel - $250 Gift Certificate" onerror="this.style.display='none'" /></div>
+          <div class="rc-body">
+            <span class="raffle-tag">Raffle</span>
+            <h3>Free Fly Apparel - $250 Gift Certificate</h3>
+            <span class="rc-link">Buy tickets &rarr;</span>
+          </div>
+        </a>
+
+        <a href="https://www.zeffy.com/en-US/ticketing/reliable-fishing-products-fish-bag" target="_blank" class="raffle-card">
+          <div class="rc-img-wrap"><img src="https://res.cloudinary.com/hxn9dbuhd/image/upload/v1789389977/organizations/a/1/4/b/a14b5769-8919-464c-bf5e-b38a50c51904/9ea941a3-97f9-46fa-ba65-81252910d24b.png" alt="Reliable Fishing Products Fish Bag" onerror="this.style.display='none'" /></div>
+          <div class="rc-body">
+            <span class="raffle-tag">Raffle</span>
+            <h3>Reliable Fishing Products Fish Bag</h3>
+            <span class="rc-link">Buy tickets &rarr;</span>
+          </div>
+        </a>
+
+        <a href="https://www.zeffy.com/en-US/ticketing/olukai-one-pair-of-womens-shoes-of-your-choice" target="_blank" class="raffle-card">
+          <div class="rc-img-wrap"><img src="https://res.cloudinary.com/hxn9dbuhd/image/upload/v1789467615/organizations/a/1/4/b/a14b5769-8919-464c-bf5e-b38a50c51904/564ae397-5708-4c9f-b9fd-13b1bf7a8e43.png" alt="Olukai - Women's Shoes of Your Choice" onerror="this.style.display='none'" /></div>
+          <div class="rc-body">
+            <span class="raffle-tag">Raffle</span>
+            <h3>Olukai &ndash; Women's Shoes of Your Choice</h3>
+            <span class="rc-link">Buy tickets &rarr;</span>
+          </div>
+        </a>
+
+        <a href="https://www.zeffy.com/en-US/ticketing/olukai-one-pair-of-mens-shoes-of-your-choice" target="_blank" class="raffle-card">
+          <div class="rc-img-wrap"><img src="https://res.cloudinary.com/hxn9dbuhd/image/upload/v1789467299/organizations/a/1/4/b/a14b5769-8919-464c-bf5e-b38a50c51904/eebe3f53-dfc3-44c7-830f-5fdf309a9fe2.png" alt="Olukai - Men's Shoes of Your Choice" onerror="this.style.display='none'" /></div>
+          <div class="rc-body">
+            <span class="raffle-tag">Raffle</span>
+            <h3>Olukai &ndash; Men's Shoes of Your Choice</h3>
+            <span class="rc-link">Buy tickets &rarr;</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
     <div style="text-align:center;margin-top:40px;">
       <a href="https://www.zeffy.com/en-US/organizations/tightlined-conservation-coalition-inc" target="_blank" class="btn-outline-navy">See All Raffle &amp; Auction Items</a>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-paper">
+  <div class="wrap">
+    <div class="kicker-label">Every Angler Gets One</div>
+    <div class="lime-rule"></div>
+    <h2 style="color:var(--navy);margin-bottom:8px;">What's In the Angler Bags</h2>
+    <p style="color:var(--slate);margin-bottom:28px;max-width:640px;">Our sponsors continue to support in incredible ways. Here's an update for this year's angler bag:</p>
+
+    <ul class="rule-list" style="list-style:none;">
+      <li class="rule-item"><div class="rule-num">1</div><div class="rule-text"><strong>Custom Shurhold Buckets</strong></div></li>
+      <li class="rule-item"><div class="rule-num">2</div><div class="rule-text"><strong>Rope Hats from Vineyard Vines</strong></div></li>
+      <li class="rule-item"><div class="rule-num">3</div><div class="rule-text"><strong>Yeti Water Bottles</strong></div></li>
+      <li class="rule-item"><div class="rule-num">4</div><div class="rule-text"><strong>Lures from Hogy Lures</strong></div></li>
+      <li class="rule-item"><div class="rule-num">5</div><div class="rule-text"><strong>Tournament Fly / Jig Boxes</strong></div></li>
+      <li class="rule-item"><div class="rule-num">6</div><div class="rule-text"><strong>And more</strong></div></li>
+    </ul>
+    <div class="bag-photos" style="display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:36px;border-radius:2px;overflow:hidden;">
+      <img src="https://files.constantcontact.com/365b215a701/f37a55b6-9362-40b2-9ee3-17b1b827b36d.png" alt="Angler bag item" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none'" />
+      <img src="https://files.constantcontact.com/365b215a701/cefe4d54-3855-47dd-a2c7-37a86b3b8794.png" alt="Angler bag item" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none'" />
+      <img src="https://files.constantcontact.com/365b215a701/d2f73a82-b80f-4fe8-9ed7-774114819bd1.jpg" alt="Angler bag item" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none'" />
+    </div>
+    <div style="text-align:center;margin-top:36px;">
+      <a href="https://www.tightlinedslam.com" class="btn-lime">Register Today</a>
     </div>
   </div>
 </section>
@@ -3003,6 +3075,25 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
 </div>
 </div>
 
+<!-- ═══ EMAIL SIGNUP ═════════════════════════════════════ -->
+<section class="section-sm bg-navy on-dark" id="signup" style="text-align:center;border-top:3px solid var(--lime);">
+  <div class="wrap">
+    <div class="kicker-label" style="color:rgba(255,255,255,0.4);text-align:center;">Stay in the Loop</div>
+    <div class="white-rule" style="margin:0 auto 18px;"></div>
+    <h2 style="max-width:520px;margin:0 auto 14px;">Get Tournament Updates</h2>
+    <p style="max-width:460px;margin:0 auto 26px;">Fishing reports, conservation news, raffle drops, and everything you need to know before October 16. No spam, just the good stuff.</p>
+
+    <!-- Swap this href for your Constant Contact Sign-up Landing Page URL when you have it -->
+    <a href="mailto:tayloringraham@tightlined.com?subject=Add%20me%20to%20the%20Tightlined%20Slam%20list&body=Please%20add%20me%20to%20the%20Tightlined%20Slam%20update%20list." class="btn-lime">Sign Me Up</a>
+
+    <p style="font-size:0.72rem;color:rgba(255,255,255,0.35);margin-top:16px;">
+      Or email us directly at <a href="mailto:tayloringraham@tightlined.com" style="color:var(--lime);text-decoration:underline;">tayloringraham@tightlined.com</a>
+    </p>
+  </div>
+</section>
+
+
+
 <!-- ═══ SHARED FOOTER ════════════════════════════════════ -->
 <footer>
   <div class="ft">
@@ -3036,6 +3127,7 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
         <li><a href="https://www.zeffy.com/en-US/donation-form/for-our-fisheries" target="_blank">Donate</a></li>
         <li><a href="#sponsors" data-page="sponsors">Become a Sponsor</a></li>
         <li><a href="mailto:tayloringraham@tightlined.com">Contact</a></li>
+        <li><a href="#signup">Get Updates</a></li>
         <li><a href="terms.html">Terms &amp; Conditions</a></li>
       </ul></div>
     </div>
