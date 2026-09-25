@@ -3083,8 +3083,29 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
     <h2 style="max-width:520px;margin:0 auto 14px;">Get Tournament Updates</h2>
     <p style="max-width:460px;margin:0 auto 26px;">Fishing reports, conservation news, raffle drops, and everything you need to know before October 16. No spam, just the good stuff.</p>
 
-    <!-- Swap this href for your Constant Contact Sign-up Landing Page URL when you have it -->
-    <a href="mailto:tayloringraham@tightlined.com?subject=Add%20me%20to%20the%20Tightlined%20Slam%20list&body=Please%20add%20me%20to%20the%20Tightlined%20Slam%20update%20list." class="btn-lime">Sign Me Up</a>
+    <!-- Begin Constant Contact Inline Form Code -->
+    <div class="ctct-inline-form" data-form-id="e9765942-700e-415d-98e3-37521b92a81c"></div>
+    <!-- End Constant Contact Inline Form Code -->
+
+    <!-- Fallback: shown only if the Constant Contact form doesn't render -->
+    <div id="signup-fallback">
+      <a href="mailto:tayloringraham@tightlined.com?subject=Add%20me%20to%20the%20Tightlined%20Slam%20list&body=Please%20add%20me%20to%20the%20Tightlined%20Slam%20update%20list." class="btn-lime">Sign Me Up</a>
+    </div>
+    <script>
+      (function () {
+        var tries = 0;
+        var timer = setInterval(function () {
+          var form = document.querySelector('.ctct-inline-form');
+          var fb = document.getElementById('signup-fallback');
+          if (form && form.children.length > 0) {      // widget rendered
+            if (fb) fb.style.display = 'none';
+            clearInterval(timer);
+          } else if (++tries > 20) {                    // ~5s, give up and keep the button
+            clearInterval(timer);
+          }
+        }, 250);
+      })();
+    </script>
 
     <p style="font-size:0.72rem;color:rgba(255,255,255,0.35);margin-top:16px;">
       Or email us directly at <a href="mailto:tayloringraham@tightlined.com" style="color:var(--lime);text-decoration:underline;">tayloringraham@tightlined.com</a>
@@ -3250,5 +3271,10 @@ function toggleYear(year) {
 </script>
 <script data-goatcounter="https://tightlinedslam.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
+<!-- Begin Constant Contact Active Forms -->
+<script> var _ctct_m = "7876aa34ed8321f2f1467818a2fc9fb0"; </script>
+<script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></script>
+<!-- End Constant Contact Active Forms -->
+
 </body>
 </html>
