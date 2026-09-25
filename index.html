@@ -2025,7 +2025,7 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
 <section class="section-sm bg-navy on-dark" style="text-align:center;">
   <div class="wrap">
     <div class="kicker-label" style="color:rgba(255,255,255,0.4);text-align:center;">Want to Donate an Item?</div>
-    <div class="white-rule" style="margin:0 auto 18px;"></div>
+    <div class="white-rule" style="margin:0 auto 26px;"></div>
     <h2 style="max-width:480px;margin:0 auto 16px;">Help Us Grow the List</h2>
     <p style="max-width:440px;margin:0 auto 28px;">If you know a brand or business that wants to donate a raffle or silent auction item, we'd love to hear from you.</p>
     <a href="mailto:tayloringraham@tightlined.com?subject=Raffle%20%26%20Auction%20Item" class="btn-lime">Get in Touch</a>
@@ -3079,9 +3079,24 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
 <section class="section-sm bg-navy on-dark" id="signup" style="text-align:center;border-top:3px solid var(--lime);">
   <div class="wrap">
     <div class="kicker-label" style="color:rgba(255,255,255,0.4);text-align:center;">Stay in the Loop</div>
-    <div class="white-rule" style="margin:0 auto 18px;"></div>
-    <h2 style="max-width:520px;margin:0 auto 14px;">Get Tournament Updates</h2>
-    <p style="max-width:460px;margin:0 auto 26px;">Fishing reports, conservation news, raffle drops, and everything you need to know before October 16. No spam, just the good stuff.</p>
+    <div class="white-rule" style="margin:0 auto 26px;"></div>
+
+    <style>
+      /* Rein in the Constant Contact widget so it sits in our layout */
+      .ctct-inline-form { max-width: 520px; margin: 0 auto; }
+      .ctct-inline-form .ctct-form-defaults,
+      .ctct-inline-form .ctct-form-wrapper,
+      .ctct-inline-form > div { padding: 24px !important; border-radius: 2px !important; }
+      /* smaller consent text and label */
+      .ctct-inline-form .ctct-form-footer,
+      .ctct-inline-form .ctct-form-footer * { font-size: 0.62rem !important; line-height: 1.45 !important; }
+      .ctct-inline-form .ctct-form-label { font-size: 0.75rem !important; }
+      .ctct-inline-form input[type="text"],
+      .ctct-inline-form input[type="email"] { padding: 10px 12px !important; }
+      .ctct-inline-form .ctct-form-button { padding: 12px 20px !important; font-size: 0.9rem !important; }
+      .ctct-inline-form .ctct-form-footer img,
+      .ctct-inline-form img[alt*="Constant Contact"] { max-width: 120px !important; height: auto !important; }
+    </style>
 
     <!-- Begin Constant Contact Inline Form Code -->
     <div class="ctct-inline-form" data-form-id="e9765942-700e-415d-98e3-37521b92a81c"></div>
