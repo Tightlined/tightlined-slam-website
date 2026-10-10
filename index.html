@@ -984,7 +984,19 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
 /* ═══ SPA ROUTING ════════════════════════════════════════ */
 .page { display: none !important; }
 .page.active { display: block !important; }
-  </style>
+  
+/* ── Mobile menu fix ───────────────────────────────────────────────
+   The menu panel used to be a nav element, so the generic nav{} rules squeezed it to 64-70px tall,
+   and its z-index (99) sat underneath the top bar (100). It is a plain div now and sits above the bar. */
+.mob-menu { z-index: 200; height: 100vh; height: 100dvh; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.mob-menu .mob-close { z-index: 201; top: 14px; right: 18px; padding: 12px 14px; font-size: 1.7rem; line-height: 1; color: var(--silver); }
+.mob-menu .mob-close:hover { color: var(--white); }
+@media (max-width: 768px) {
+  .mob-menu { justify-content: flex-start; padding: 84px 28px 40px; }
+  .mob-menu a { font-size: clamp(1.5rem, 6.4vw, 2.1rem); padding: 11px 0; }
+  .mob-menu .mob-reg { margin-top: 16px; }
+}
+</style>
 </head>
 <body>
 
@@ -1011,8 +1023,8 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
 </nav>
 
 <!-- ═══ MOBILE MENU ══════════════════════════════════════ -->
-<nav class="mob-menu" id="mob-menu">
-  <button class="mob-close" id="mob-close">✕</button>
+<div class="mob-menu" id="mob-menu" role="dialog" aria-label="Site menu">
+  <button class="mob-close" id="mob-close" aria-label="Close menu">✕</button>
   <a href="#mission" data-page="mission">Mission</a>
   <a href="#fishing" data-page="fishing">The Fishing</a>
   <a href="#rules" data-page="rules">Rules</a>
@@ -1021,7 +1033,7 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
   <a href="#sponsors" data-page="sponsors">Sponsors</a>
   <a href="#results" data-page="results">Results</a>
   <a href="https://www.zeffy.com/en-US/ticketing/9th-annual-tightlined-slam" target="_blank" class="mob-reg">Register →</a>
-</nav>
+</div>
 
 <!-- ═══ PAGES ════════════════════════════════════════════ -->
 <div id="page-home" class="page active">
@@ -3190,6 +3202,12 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
   const PAGES = ['home','mission','fishing','rules','blockparty','raffle','sponsors','results'];
   const nav = document.getElementById('main-nav');
   const mobMenu = document.getElementById('mob-menu');
+  const ham = document.getElementById('ham');
+  function setMenu(open) {
+    mobMenu.classList.toggle('open', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+    ham.setAttribute('aria-expanded', String(open));
+  }
 
   function showPage(pageId) {
     if (!PAGES.includes(pageId)) pageId = 'home';
@@ -3206,7 +3224,7 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
       a.classList.toggle('active', a.dataset.page === pageId);
     });
     // Close mobile menu
-    mobMenu.classList.remove('open');
+    setMenu(false);
     // Scroll to top
     window.scrollTo(0, 0);
     // Re-init page-specific scripts
@@ -3274,8 +3292,12 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
   });
 
   // Mobile menu
-  document.getElementById('ham').addEventListener('click', () => mobMenu.classList.add('open'));
-  document.getElementById('mob-close').addEventListener('click', () => mobMenu.classList.remove('open'));
+  ham.setAttribute('role', 'button'); ham.setAttribute('aria-label', 'Open menu'); ham.setAttribute('aria-expanded', 'false');
+  ham.addEventListener('click', () => setMenu(!mobMenu.classList.contains('open')));
+  document.getElementById('mob-close').addEventListener('click', () => setMenu(false));
+  mobMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
+  window.addEventListener('resize', () => { if (window.innerWidth > 768) setMenu(false); });
 
   // Initial load
   const initialPage = location.hash.slice(1) || 'home';
