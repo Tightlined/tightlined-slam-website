@@ -969,6 +969,11 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
   .sp-card:hover { background:var(--cloud); }
   .sp-card .sn { font-family:var(--fsc); font-weight:700; font-size:0.88rem; color:var(--navy); line-height:1.3; letter-spacing:0.02em; }
   .sp-card .su { font-family:var(--fb); font-size:0.68rem; color:var(--mist); margin-top:5px; }
+  .sp-card .sr { font-family:var(--fb); font-size:0.58rem; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#8a9a2c; margin-bottom:12px; }
+  /* Sponsor-page cards only: undo the home-page species-card sizing and photo fade that leaked onto them */
+  .sp-grid .sp-card { aspect-ratio:auto; }
+  .sp-grid .sp-card::before { display:none; }
+  .sp-grid.fd .sp-card { justify-content:flex-start; }
 
   /* Dark (upper tier) cards */
   .sp-card.dark { background:var(--navy); border-left:3px solid var(--lime); min-height:140px; }
@@ -1265,64 +1270,58 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
       <!-- SET 1 -->
       <a href="https://www.scholtzandco.com/" target="_blank" class="carousel-item"><img src="assets/sp_001.jpg" alt="Scholtz &amp; Co" /></a>
       <a href="https://www.allseasonsmarineworks.com/" target="_blank" class="carousel-item"><img src="assets/sp_002.jpg" alt="All Seasons Marine Works" /></a>
-      <a href="https://oddjoblandscaping.com/" target="_blank" class="carousel-item"><img src="assets/sp_004.jpg" alt="Odd Job Landscaping" /></a>
       <a href="https://saratogaproxy.com/" target="_blank" class="carousel-item"><img src="assets/sp_005.jpg" alt="Saratoga Proxy" /></a>
       <a href="https://freeflyapparel.com/" target="_blank" class="carousel-item"><img src="assets/sp_007.jpg" alt="FreeFly Apparel" /></a>
       <a href="https://ascadvisors.com/" target="_blank" class="carousel-item"><img src="assets/sp_003.jpg" alt="ASC Advisors" /></a>
       <a href="https://www.northcountryboatworks.com/" target="_blank" class="carousel-item"><img src="assets/sp_008.jpg" alt="North Country Boatworks" /></a>
       <a href="http://www.yeti.com" target="_blank" class="carousel-item"><img src="assets/sp_025.jpg" alt="YETI" /></a>
-      <a href="https://simmsfishing.com/" target="_blank" class="carousel-item"><img src="assets/sp_022.jpg" alt="Simms Fishing" /></a>
       <a href="http://www.vineyardvines.com" target="_blank" class="carousel-item"><img src="assets/sp_018.jpg" alt="Vineyard Vines" /></a>
       <a href="http://igfa.org" target="_blank" class="carousel-item"><img src="assets/sp_029.jpg" alt="IGFA" /></a>
       <a href="https://bajiosunglasses.com/" target="_blank" class="carousel-item"><img src="assets/sp_031.jpg" alt="Bajio" /></a>
-      <a href="https://jbtackle.com/" target="_blank" class="carousel-item"><img src="assets/sp_009.jpg" alt="JB Tackle" /></a>
       <a href="https://gameonlures.com/" target="_blank" class="carousel-item"><img src="assets/sp_020.jpg" alt="Game On Lures" style="background:#f4f1ec;padding:3px;border-radius:2px;" /></a>
       <a href="https://www.donelanwines.com/" target="_blank" class="carousel-item"><img src="assets/sp_013.jpg" alt="Donelan Wines" /></a>
       <a href="https://www.regattacraftmixers.com/" target="_blank" class="carousel-item"><img src="assets/sp_012.jpg" alt="Regatta Craft Mixers" /></a>
       <a href="https://lightbitecharters.com/" target="_blank" class="carousel-item"><img src="assets/sp_024.jpg" alt="Light Bite Charters" /></a>
+      <div class="carousel-item"><img src="assets/sp_northrop.png" alt="Capt. Jeff Northrop" onerror="if(!this.dataset.alt){this.dataset.alt=1;this.src='assets/sp_northrop.jpg';}else{this.parentNode.style.display='none';}" /></div>
       <a href="https://www.tailflyfishing.com/" target="_blank" class="carousel-item"><img src="assets/sp_032.jpg" alt="TAIL Fly Fishing" /></a>
-      <a href="https://www.soundviewmillworks.com/" target="_blank" class="carousel-item"><img src="assets/sp_019.jpg" alt="Sound View Millworks" /></a>
+      <a href="https://www.soundviewmillworks.com/" target="_blank" class="carousel-item"><img src="assets/sp_019.jpg" alt="Soundview Millworks" /></a>
       <a href="https://preciousoysters.com/" target="_blank" class="carousel-item"><img src="assets/sp_015.jpg" alt="Precious Oysters" /></a>
       <a href="https://olukai.com/" target="_blank" class="carousel-item"><img src="assets/sp_028.jpg" alt="OluKai" /></a>
       <a href="https://kanefootwear.com/" target="_blank" class="carousel-item"><img src="assets/sp_030.jpg" alt="Kane Footwear" /></a>
       <a href="https://www.rowaytonseafood.com/" target="_blank" class="carousel-item"><img src="assets/sp_023.jpg" alt="Rowayton Seafood" /></a>
       <a href="https://www.compleatangleronline.com/" target="_blank" class="carousel-item"><img src="assets/sp_021.jpg" alt="Compleat Angler" style="background:#f4f1ec;padding:3px;border-radius:2px;" /></a>
+      <a href="https://www.dariensport.com/" target="_blank" class="carousel-item"><img src="assets/sp_dariensportshop.png" alt="Darien Sport Shop" onerror="if(!this.dataset.alt){this.dataset.alt=1;this.src='assets/sp_dariensportshop.jpg';}else{this.parentNode.style.display='none';}" /></a>
       <a href="https://www.yachtworld.com/boatworksyachtsales/" target="_blank" class="carousel-item"><img src="assets/sp_010.jpg" alt="Boatworks Yacht Sales" /></a>
-      <a href="https://www.guidelineflyfish.com/" target="_blank" class="carousel-item"><img src="assets/sp_027.jpg" alt="Guideline" /></a>
       <a href="https://lamsonoutdoors.com/" target="_blank" class="carousel-item"><img src="assets/sp_026.jpg" alt="Lamson" /></a>
       <a href="https://www.hogy.com/" target="_blank" class="carousel-item"><img src="assets/sp_033.jpg" alt="Hogy Lures" /></a>
-      <a href="https://afueracoffee.com/" target="_blank" class="carousel-item"><img src="assets/sp_034.jpg" alt="Afuera Coffee Co." /></a>
 
       <!-- SET 2 — exact duplicate for seamless loop -->
       <a href="https://www.scholtzandco.com/" target="_blank" class="carousel-item"><img src="assets/sp_001.jpg" alt="Scholtz &amp; Co" /></a>
       <a href="https://www.allseasonsmarineworks.com/" target="_blank" class="carousel-item"><img src="assets/sp_002.jpg" alt="All Seasons Marine Works" /></a>
-      <a href="https://oddjoblandscaping.com/" target="_blank" class="carousel-item"><img src="assets/sp_004.jpg" alt="Odd Job Landscaping" /></a>
       <a href="https://saratogaproxy.com/" target="_blank" class="carousel-item"><img src="assets/sp_005.jpg" alt="Saratoga Proxy" /></a>
       <a href="https://freeflyapparel.com/" target="_blank" class="carousel-item"><img src="assets/sp_007.jpg" alt="FreeFly Apparel" /></a>
       <a href="https://ascadvisors.com/" target="_blank" class="carousel-item"><img src="assets/sp_003.jpg" alt="ASC Advisors" /></a>
       <a href="https://www.northcountryboatworks.com/" target="_blank" class="carousel-item"><img src="assets/sp_008.jpg" alt="North Country Boatworks" /></a>
       <a href="http://www.yeti.com" target="_blank" class="carousel-item"><img src="assets/sp_025.jpg" alt="YETI" /></a>
-      <a href="https://simmsfishing.com/" target="_blank" class="carousel-item"><img src="assets/sp_022.jpg" alt="Simms Fishing" /></a>
       <a href="http://www.vineyardvines.com" target="_blank" class="carousel-item"><img src="assets/sp_018.jpg" alt="Vineyard Vines" /></a>
       <a href="http://igfa.org" target="_blank" class="carousel-item"><img src="assets/sp_029.jpg" alt="IGFA" /></a>
       <a href="https://bajiosunglasses.com/" target="_blank" class="carousel-item"><img src="assets/sp_031.jpg" alt="Bajio" /></a>
-      <a href="https://jbtackle.com/" target="_blank" class="carousel-item"><img src="assets/sp_009.jpg" alt="JB Tackle" /></a>
       <a href="https://gameonlures.com/" target="_blank" class="carousel-item"><img src="assets/sp_020.jpg" alt="Game On Lures" style="background:#f4f1ec;padding:3px;border-radius:2px;" /></a>
       <a href="https://www.donelanwines.com/" target="_blank" class="carousel-item"><img src="assets/sp_013.jpg" alt="Donelan Wines" /></a>
       <a href="https://www.regattacraftmixers.com/" target="_blank" class="carousel-item"><img src="assets/sp_012.jpg" alt="Regatta Craft Mixers" /></a>
       <a href="https://lightbitecharters.com/" target="_blank" class="carousel-item"><img src="assets/sp_024.jpg" alt="Light Bite Charters" /></a>
+      <div class="carousel-item"><img src="assets/sp_northrop.png" alt="Capt. Jeff Northrop" onerror="if(!this.dataset.alt){this.dataset.alt=1;this.src='assets/sp_northrop.jpg';}else{this.parentNode.style.display='none';}" /></div>
       <a href="https://www.tailflyfishing.com/" target="_blank" class="carousel-item"><img src="assets/sp_032.jpg" alt="TAIL Fly Fishing" /></a>
-      <a href="https://www.soundviewmillworks.com/" target="_blank" class="carousel-item"><img src="assets/sp_019.jpg" alt="Sound View Millworks" /></a>
+      <a href="https://www.soundviewmillworks.com/" target="_blank" class="carousel-item"><img src="assets/sp_019.jpg" alt="Soundview Millworks" /></a>
       <a href="https://preciousoysters.com/" target="_blank" class="carousel-item"><img src="assets/sp_015.jpg" alt="Precious Oysters" /></a>
       <a href="https://olukai.com/" target="_blank" class="carousel-item"><img src="assets/sp_028.jpg" alt="OluKai" /></a>
       <a href="https://kanefootwear.com/" target="_blank" class="carousel-item"><img src="assets/sp_030.jpg" alt="Kane Footwear" /></a>
       <a href="https://www.rowaytonseafood.com/" target="_blank" class="carousel-item"><img src="assets/sp_023.jpg" alt="Rowayton Seafood" /></a>
       <a href="https://www.compleatangleronline.com/" target="_blank" class="carousel-item"><img src="assets/sp_021.jpg" alt="Compleat Angler" style="background:#f4f1ec;padding:3px;border-radius:2px;" /></a>
+      <a href="https://www.dariensport.com/" target="_blank" class="carousel-item"><img src="assets/sp_dariensportshop.png" alt="Darien Sport Shop" onerror="if(!this.dataset.alt){this.dataset.alt=1;this.src='assets/sp_dariensportshop.jpg';}else{this.parentNode.style.display='none';}" /></a>
       <a href="https://www.yachtworld.com/boatworksyachtsales/" target="_blank" class="carousel-item"><img src="assets/sp_010.jpg" alt="Boatworks Yacht Sales" /></a>
-      <a href="https://www.guidelineflyfish.com/" target="_blank" class="carousel-item"><img src="assets/sp_027.jpg" alt="Guideline" /></a>
       <a href="https://lamsonoutdoors.com/" target="_blank" class="carousel-item"><img src="assets/sp_026.jpg" alt="Lamson" /></a>
       <a href="https://www.hogy.com/" target="_blank" class="carousel-item"><img src="assets/sp_033.jpg" alt="Hogy Lures" /></a>
-      <a href="https://afueracoffee.com/" target="_blank" class="carousel-item"><img src="assets/sp_034.jpg" alt="Afuera Coffee Co." /></a>
 
         </div><!-- end carousel-track -->
   </div><!-- end carousel-outer -->
@@ -2113,6 +2112,10 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
           <img src="assets/sp_1868.jpg" alt="1868 Golf Club" style="height:60px;width:auto;max-width:190px;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
           <span class="sn">1868 Golf Club</span><span class="su">1868golfclub.com</span>
         </a>
+        <a href="https://www.columbia.com/c/fishing/" target="_blank" class="sp-card dark">
+          <img src="assets/sp_columbiapfg.jpg" alt="Columbia PFG" style="height:60px;width:auto;max-width:190px;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
+          <span class="sn">Columbia PFG</span><span class="su">columbia.com</span>
+        </a>
       </div>
     </div>
 
@@ -2130,104 +2133,6 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
         <a href="https://everysupply.com/" target="_blank" class="sp-card">
           <img src="assets/sp_everysupply.jpg" alt="Every Supply Company, Inc." style="height:60px;width:auto;max-width:190px;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
           <span class="sn">Every Supply Company, Inc.</span><span class="su">everysupply.com</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- ── LOCATION SPONSOR ── -->
-    <div class="sp-tier">
-      <div class="tier-hd">
-        <span class="tier-lbl" style="color:var(--mist);">Location Sponsor</span>
-        <div class="tier-rule"></div>
-      </div>
-      <div class="sp-grid species">
-        <a href="https://www.yachtworld.com/boatworksyachtsales/" target="_blank" class="sp-card">
-          <img src="assets/sp_010.jpg" alt="Boatworks Yacht Sales" style="height:60px;width:auto;max-width:190px;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
-          <span class="sn">Boatworks Yacht Sales</span><span class="su">yachtworld.com</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- ── SPIRIT SPONSOR ── -->
-    <div class="sp-tier">
-      <div class="tier-hd">
-        <span class="tier-lbl" style="color:var(--mist);">Spirit Sponsor</span>
-        <div class="tier-rule"></div>
-      </div>
-      <div class="sp-grid species">
-        <a href="https://montaukdistillingco.com/" target="_blank" class="sp-card">
-          <img src="assets/sp_011.jpg" alt="Montauk Distilling Co." style="height:60px;width:auto;max-width:190px;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
-          <span class="sn">Montauk Distilling Co.</span><span class="su">montaukdistillingco.com</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- ── CRAFT MIXER SPONSOR ── -->
-    <div class="sp-tier">
-      <div class="tier-hd">
-        <span class="tier-lbl" style="color:var(--mist);">Craft Mixer Sponsor</span>
-        <div class="tier-rule"></div>
-      </div>
-      <div class="sp-grid species">
-        <a href="https://www.regattacraftmixers.com/" target="_blank" class="sp-card">
-          <img src="assets/sp_012.jpg" alt="Regatta Craft Mixers" style="height:60px;width:auto;max-width:190px;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
-          <span class="sn">Regatta Craft Mixers</span><span class="su">regattacraftmixers.com</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- ── WINE SPONSOR ── -->
-    <div class="sp-tier">
-      <div class="tier-hd">
-        <span class="tier-lbl" style="color:var(--mist);">Wine Sponsor</span>
-        <div class="tier-rule"></div>
-      </div>
-      <div class="sp-grid species">
-        <a href="https://www.donelanwines.com/" target="_blank" class="sp-card">
-          <img src="assets/sp_013.jpg" alt="Donelan Wines" style="height:60px;width:auto;max-width:190px;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
-          <span class="sn">Donelan Wines</span><span class="su">donelanwines.com</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- ── BEER SPONSOR ── -->
-    <div class="sp-tier">
-      <div class="tier-hd">
-        <span class="tier-lbl" style="color:var(--mist);">Beer Sponsor</span>
-        <div class="tier-rule"></div>
-      </div>
-      <div class="sp-grid species">
-        <a href="http://devilspurse.com" target="_blank" class="sp-card">
-          <img src="assets/sp_014.jpg" alt="Devil's Purse Brewing Co." style="height:60px;width:auto;max-width:190px;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
-          <span class="sn">Devil's Purse Brewing Co.</span><span class="su">devilspurse.com</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- ── OYSTER PROVIDER ── -->
-    <div class="sp-tier">
-      <div class="tier-hd">
-        <span class="tier-lbl" style="color:var(--mist);">Oyster Provider</span>
-        <div class="tier-rule"></div>
-      </div>
-      <div class="sp-grid species">
-        <a href="https://preciousoysters.com/" target="_blank" class="sp-card">
-          <img src="assets/sp_015.jpg" alt="Precious Oysters" style="height:60px;width:auto;max-width:190px;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
-          <span class="sn">Precious Oysters</span><span class="su">preciousoysters.com</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- ── FOOD PROVIDER ── -->
-    <div class="sp-tier">
-      <div class="tier-hd">
-        <span class="tier-lbl" style="color:var(--mist);">Food Provider</span>
-        <div class="tier-rule"></div>
-      </div>
-      <div class="sp-grid species">
-        <a href="https://darienbutchershop.com/" target="_blank" class="sp-card">
-          <img src="assets/sp_016.jpg" alt="Darien Butcher Shop" style="height:60px;width:auto;max-width:190px;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
-          <span class="sn">Darien Butcher Shop</span><span class="su">darienbutchershop.com</span>
         </a>
       </div>
     </div>
@@ -2252,8 +2157,8 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
           <span class="sn">Vineyard Vines</span><span class="su">vineyardvines.com</span>
         </a>
         <a href="https://www.soundviewmillworks.com/" target="_blank" class="sp-card">
-          <img src="assets/sp_019.jpg" alt="Sound View Millworks" style="height:60px;width:auto;max-width:190px;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
-          <span class="sn">Sound View Millworks</span><span class="su">soundviewmillworks.com</span>
+          <img src="assets/sp_019.jpg" alt="Soundview Millworks" style="height:60px;width:auto;max-width:190px;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
+          <span class="sn">Soundview Millworks</span><span class="su">soundviewmillworks.com</span>
         </a>
         <a href="https://gameonlures.com/" target="_blank" class="sp-card">
           <img src="assets/sp_020.jpg" alt="Game On Lures" style="height:60px;width:auto;max-width:190px;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
@@ -2267,6 +2172,10 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
           <img src="assets/sp_021.jpg" alt="Compleat Angler" style="height:60px;width:auto;max-width:190px;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
           <span class="sn">Compleat Angler</span><span class="su">compleatangleronline.com</span>
         </a>
+        <a href="https://www.dariensport.com/" target="_blank" class="sp-card">
+          <img src="assets/sp_dariensportshop.png" alt="Darien Sport Shop" style="height:60px;width:auto;max-width:190px;object-fit:contain;margin-bottom:12px;" onerror="if(!this.dataset.alt){this.dataset.alt=1;this.src='assets/sp_dariensportshop.jpg';}else{this.style.display='none';}" />
+          <span class="sn">Darien Sport Shop</span><span class="su">dariensport.com</span>
+        </a>
         <a href="https://www.rowaytonseafood.com/" target="_blank" class="sp-card">
           <img src="assets/sp_023.jpg" alt="Rowayton Seafood" style="height:60px;width:auto;max-width:190px;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
           <span class="sn">Rowayton Seafood</span><span class="su">rowaytonseafood.com</span>
@@ -2275,6 +2184,10 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
           <img src="assets/sp_024.jpg" alt="Light Bite Charters" style="height:60px;width:auto;max-width:190px;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
           <span class="sn">Light Bite Charters</span><span class="su">lightbitecharters.com</span>
         </a>
+        <div class="sp-card">
+          <img src="assets/sp_northrop.png" alt="Capt. Jeff Northrop" style="height:60px;width:auto;max-width:190px;object-fit:contain;margin-bottom:12px;" onerror="if(!this.dataset.alt){this.dataset.alt=1;this.src='assets/sp_northrop.jpg';}else{this.style.display='none';}" />
+          <span class="sn">Capt. Jeff Northrop</span>
+        </div>
         <a href="http://www.yeti.com" target="_blank" class="sp-card">
           <img src="assets/sp_025.jpg" alt="YETI" style="height:60px;width:auto;max-width:190px;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
           <span class="sn">YETI</span><span class="su">yeti.com</span>
@@ -2326,8 +2239,57 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
       </div>
     </div>
 
+    <!-- ── LOCATION SPONSOR ── -->
+    <div class="sp-tier">
+      <div class="tier-hd">
+        <span class="tier-lbl" style="color:var(--mist);">Location Sponsor</span>
+        <div class="tier-rule"></div>
+      </div>
+      <div class="sp-grid species">
+        <a href="https://www.yachtworld.com/boatworksyachtsales/" target="_blank" class="sp-card">
+          <img src="assets/sp_010.jpg" alt="Boatworks Yacht Sales" style="height:60px;width:auto;max-width:190px;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
+          <span class="sn">Boatworks Yacht Sales</span><span class="su">yachtworld.com</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- ── FOOD &amp; DRINK PARTNERS ── -->
+    <div class="sp-tier">
+      <div class="tier-hd">
+        <span class="tier-lbl" style="color:var(--mist);">Food &amp; Drink Partners</span>
+        <div class="tier-rule"></div>
+      </div>
+      <div class="sp-grid species fd" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr));">
+        <a href="https://montaukdistillingco.com/" target="_blank" class="sp-card">
+          <span class="sr">Spirit</span>
+          <img src="assets/sp_011.jpg" alt="Montauk Distilling Co." style="height:60px;width:auto;max-width:100%;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
+          <span class="sn">Montauk Distilling Co.</span><span class="su">montaukdistillingco.com</span>
+        </a>
+        <a href="https://www.regattacraftmixers.com/" target="_blank" class="sp-card">
+          <span class="sr">Craft Mixer</span>
+          <img src="assets/sp_012.jpg" alt="Regatta Craft Mixers" style="height:60px;width:auto;max-width:100%;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
+          <span class="sn">Regatta Craft Mixers</span><span class="su">regattacraftmixers.com</span>
+        </a>
+        <a href="https://www.donelanwines.com/" target="_blank" class="sp-card">
+          <span class="sr">Wine</span>
+          <img src="assets/sp_013.jpg" alt="Donelan Wines" style="height:60px;width:auto;max-width:100%;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
+          <span class="sn">Donelan Wines</span><span class="su">donelanwines.com</span>
+        </a>
+        <a href="https://preciousoysters.com/" target="_blank" class="sp-card">
+          <span class="sr">Oysters</span>
+          <img src="assets/sp_015.jpg" alt="Precious Oysters" style="height:60px;width:auto;max-width:100%;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
+          <span class="sn">Precious Oysters</span><span class="su">preciousoysters.com</span>
+        </a>
+        <a href="https://darienbutchershop.com/" target="_blank" class="sp-card">
+          <span class="sr">Food</span>
+          <img src="assets/sp_016.jpg" alt="Darien Butcher Shop" style="height:60px;width:auto;max-width:100%;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
+          <span class="sn">Darien Butcher Shop</span><span class="su">darienbutchershop.com</span>
+        </a>
+      </div>
+    </div>
+
     <!-- ── CONSERVATION PARTNER ── -->
-    <div class="sp-tier" style="margin-bottom:0;">
+    <div class="sp-tier">
       <div class="tier-hd">
         <span class="tier-lbl" style="color:var(--mist);">Conservation Partner</span>
         <div class="tier-rule"></div>
@@ -2341,6 +2303,43 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
           <p style="font-size:0.9rem;color:var(--slate);line-height:1.75;">Advocates for science-based fisheries management for striped bass, false albacore, bluefish, and more along the entire Eastern Seaboard. The Tightlined Slam is a proud supporter of their work.</p>
           <a href="https://www.saltwaterguidesassociation.org" target="_blank" style="display:inline-block;margin-top:12px;font-family:var(--fb);font-size:0.72rem;font-weight:700;color:var(--navy);text-decoration:underline;">saltwaterguidesassociation.org &rarr;</a>
         </div>
+      </div>
+    </div>
+
+    <!-- ── PAST SPONSORS ── -->
+    <div class="sp-tier" style="margin-bottom:0;">
+      <div class="tier-hd">
+        <span class="tier-lbl" style="color:var(--mist);">Past Sponsors</span>
+        <div class="tier-rule"></div>
+      </div>
+      <div class="sp-grid species fd" style="grid-template-columns:repeat(auto-fit,minmax(140px,1fr));">
+        <a href="https://afueracoffee.com/" target="_blank" class="sp-card">
+          <img src="assets/sp_034.jpg" alt="Afuera Coffee Co." style="height:60px;width:auto;max-width:100%;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
+          <span class="sn">Afuera Coffee Co.</span><span class="su">afueracoffee.com</span>
+        </a>
+        <a href="http://devilspurse.com" target="_blank" class="sp-card">
+          <img src="assets/sp_014.jpg" alt="Devil's Purse Brewing Co." style="height:60px;width:auto;max-width:100%;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
+          <span class="sn">Devil's Purse Brewing Co.</span><span class="su">devilspurse.com</span>
+        </a>
+        <a href="https://www.guidelineflyfish.com/" target="_blank" class="sp-card">
+          <img src="assets/sp_027.jpg" alt="Guideline" style="height:60px;width:auto;max-width:100%;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
+          <span class="sn">Guideline</span><span class="su">guidelineflyfish.com</span>
+        </a>
+        <a href="https://jbtackle.com/" target="_blank" class="sp-card">
+          <img src="assets/sp_009.jpg" alt="JB Tackle Co." style="height:60px;width:auto;max-width:100%;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
+          <span class="sn">JB Tackle Co.</span><span class="su">jbtackle.com</span>
+        </a>
+        <a href="https://oddjoblandscaping.com/" target="_blank" class="sp-card">
+          <img src="assets/sp_004.jpg" alt="Odd Job Landscaping" style="height:60px;width:auto;max-width:100%;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
+          <span class="sn">Odd Job Landscaping</span><span class="su">oddjoblandscaping.com</span>
+        </a>
+        <div class="sp-card" style="justify-content:center;">
+          <span class="sn">Seward &amp; Kissel</span>
+        </div>
+        <a href="https://simmsfishing.com/" target="_blank" class="sp-card">
+          <img src="assets/sp_022.jpg" alt="Simms Fishing" style="height:60px;width:auto;max-width:100%;object-fit:contain;margin-bottom:12px;" onerror="this.style.display='none'" />
+          <span class="sn">Simms Fishing</span><span class="su">simmsfishing.com</span>
+        </a>
       </div>
     </div>
 
@@ -2400,17 +2399,18 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
       <a href="https://montaukdistillingco.com/" target="_blank" class="carousel-item"><img src="assets/sp_011.jpg" alt="Montauk Distilling Co." /></a>
       <a href="https://www.regattacraftmixers.com/" target="_blank" class="carousel-item"><img src="assets/sp_012.jpg" alt="Regatta Craft Mixers" /></a>
       <a href="https://www.donelanwines.com/" target="_blank" class="carousel-item"><img src="assets/sp_013.jpg" alt="Donelan Wines" /></a>
-      <a href="http://devilspurse.com" target="_blank" class="carousel-item"><img src="assets/sp_014.jpg" alt="Devil's Purse Brewing Co." /></a>
       <a href="https://preciousoysters.com/" target="_blank" class="carousel-item"><img src="assets/sp_015.jpg" alt="Precious Oysters" /></a>
       <a href="https://darienbutchershop.com/" target="_blank" class="carousel-item"><img src="assets/sp_016.jpg" alt="Darien Butcher Shop" /></a>
       <a href="https://anglingcompany.com/" target="_blank" class="carousel-item"><img src="assets/sp_035.jpg" alt="Angling Company" /></a>
       <a href="https://www.fishermansworld.net/" target="_blank" class="carousel-item"><img src="assets/sp_017.jpg" alt="Fisherman's World" /></a>
       <a href="http://www.vineyardvines.com" target="_blank" class="carousel-item"><img src="assets/sp_018.jpg" alt="Vineyard Vines" /></a>
-      <a href="https://www.soundviewmillworks.com/" target="_blank" class="carousel-item"><img src="assets/sp_019.jpg" alt="Sound View Millworks" /></a>
+      <a href="https://www.soundviewmillworks.com/" target="_blank" class="carousel-item"><img src="assets/sp_019.jpg" alt="Soundview Millworks" /></a>
       <a href="https://gameonlures.com/" target="_blank" class="carousel-item"><img src="assets/sp_020.jpg" alt="Game On Lures" /></a>
       <a href="https://www.compleatangleronline.com/" target="_blank" class="carousel-item"><img src="assets/sp_021.jpg" alt="Compleat Angler" /></a>
+      <a href="https://www.dariensport.com/" target="_blank" class="carousel-item"><img src="assets/sp_dariensportshop.png" alt="Darien Sport Shop" onerror="if(!this.dataset.alt){this.dataset.alt=1;this.src='assets/sp_dariensportshop.jpg';}else{this.parentNode.style.display='none';}" /></a>
       <a href="https://www.rowaytonseafood.com/" target="_blank" class="carousel-item"><img src="assets/sp_023.jpg" alt="Rowayton Seafood" /></a>
       <a href="https://lightbitecharters.com/" target="_blank" class="carousel-item"><img src="assets/sp_024.jpg" alt="Light Bite Charters" /></a>
+      <div class="carousel-item"><img src="assets/sp_northrop.png" alt="Capt. Jeff Northrop" onerror="if(!this.dataset.alt){this.dataset.alt=1;this.src='assets/sp_northrop.jpg';}else{this.parentNode.style.display='none';}" /></div>
       <a href="http://www.yeti.com" target="_blank" class="carousel-item"><img src="assets/sp_025.jpg" alt="YETI" /></a>
       <a href="https://www.lamsonflyfishing.com/" target="_blank" class="carousel-item"><img src="assets/sp_026.jpg" alt="Lamson" /></a>
       <a href="https://olukai.com/" target="_blank" class="carousel-item"><img src="assets/sp_028.jpg" alt="OluKai" /></a>
@@ -2434,17 +2434,18 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.05); pad
       <a href="https://montaukdistillingco.com/" target="_blank" class="carousel-item"><img src="assets/sp_011.jpg" alt="Montauk Distilling Co." /></a>
       <a href="https://www.regattacraftmixers.com/" target="_blank" class="carousel-item"><img src="assets/sp_012.jpg" alt="Regatta Craft Mixers" /></a>
       <a href="https://www.donelanwines.com/" target="_blank" class="carousel-item"><img src="assets/sp_013.jpg" alt="Donelan Wines" /></a>
-      <a href="http://devilspurse.com" target="_blank" class="carousel-item"><img src="assets/sp_014.jpg" alt="Devil's Purse Brewing Co." /></a>
       <a href="https://preciousoysters.com/" target="_blank" class="carousel-item"><img src="assets/sp_015.jpg" alt="Precious Oysters" /></a>
       <a href="https://darienbutchershop.com/" target="_blank" class="carousel-item"><img src="assets/sp_016.jpg" alt="Darien Butcher Shop" /></a>
       <a href="https://anglingcompany.com/" target="_blank" class="carousel-item"><img src="assets/sp_035.jpg" alt="Angling Company" /></a>
       <a href="https://www.fishermansworld.net/" target="_blank" class="carousel-item"><img src="assets/sp_017.jpg" alt="Fisherman's World" /></a>
       <a href="http://www.vineyardvines.com" target="_blank" class="carousel-item"><img src="assets/sp_018.jpg" alt="Vineyard Vines" /></a>
-      <a href="https://www.soundviewmillworks.com/" target="_blank" class="carousel-item"><img src="assets/sp_019.jpg" alt="Sound View Millworks" /></a>
+      <a href="https://www.soundviewmillworks.com/" target="_blank" class="carousel-item"><img src="assets/sp_019.jpg" alt="Soundview Millworks" /></a>
       <a href="https://gameonlures.com/" target="_blank" class="carousel-item"><img src="assets/sp_020.jpg" alt="Game On Lures" /></a>
       <a href="https://www.compleatangleronline.com/" target="_blank" class="carousel-item"><img src="assets/sp_021.jpg" alt="Compleat Angler" /></a>
+      <a href="https://www.dariensport.com/" target="_blank" class="carousel-item"><img src="assets/sp_dariensportshop.png" alt="Darien Sport Shop" onerror="if(!this.dataset.alt){this.dataset.alt=1;this.src='assets/sp_dariensportshop.jpg';}else{this.parentNode.style.display='none';}" /></a>
       <a href="https://www.rowaytonseafood.com/" target="_blank" class="carousel-item"><img src="assets/sp_023.jpg" alt="Rowayton Seafood" /></a>
       <a href="https://lightbitecharters.com/" target="_blank" class="carousel-item"><img src="assets/sp_024.jpg" alt="Light Bite Charters" /></a>
+      <div class="carousel-item"><img src="assets/sp_northrop.png" alt="Capt. Jeff Northrop" onerror="if(!this.dataset.alt){this.dataset.alt=1;this.src='assets/sp_northrop.jpg';}else{this.parentNode.style.display='none';}" /></div>
       <a href="http://www.yeti.com" target="_blank" class="carousel-item"><img src="assets/sp_025.jpg" alt="YETI" /></a>
       <a href="https://www.lamsonflyfishing.com/" target="_blank" class="carousel-item"><img src="assets/sp_026.jpg" alt="Lamson" /></a>
       <a href="https://olukai.com/" target="_blank" class="carousel-item"><img src="assets/sp_028.jpg" alt="OluKai" /></a>
